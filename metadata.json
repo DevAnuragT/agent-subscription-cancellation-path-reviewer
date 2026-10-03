@@ -1,0 +1,29 @@
+{
+  "slug": "subscription-cancellation-path-reviewer",
+  "title": "Subscription Cancellation Path Reviewer",
+  "category": "retail-ecommerce",
+  "description": "Review subscription cancellation evidence for effective date and confirmation.",
+  "fields": {
+    "subscription_id": {
+      "label": "subscription id",
+      "kind": "required",
+      "minimum": 0
+    },
+    "cancellation_steps": {
+      "label": "cancellation steps",
+      "kind": "list",
+      "minimum": 1
+    },
+    "confirmation_evidence": {
+      "label": "confirmation evidence",
+      "kind": "required",
+      "minimum": 0
+    },
+    "effective_date": {
+      "label": "effective date",
+      "kind": "date",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

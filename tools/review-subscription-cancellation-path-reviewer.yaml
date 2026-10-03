@@ -1,0 +1,59 @@
+{
+  "name": "review-subscription-cancellation-path-reviewer",
+  "description": "Run Subscription Cancellation Path Reviewer",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "subscription_id": {
+            "type": "string",
+            "description": "subscription id"
+          },
+          "cancellation_steps": {
+            "type": "array",
+            "description": "cancellation steps"
+          },
+          "confirmation_evidence": {
+            "type": "string",
+            "description": "confirmation evidence"
+          },
+          "effective_date": {
+            "type": "string",
+            "description": "effective date"
+          }
+        },
+        "required": [
+          "subscription_id",
+          "cancellation_steps",
+          "confirmation_evidence",
+          "effective_date"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-subscription-cancellation-path-reviewer.py",
+    "runtime": "python3"
+  }
+}

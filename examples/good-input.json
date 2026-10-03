@@ -1,0 +1,8 @@
+{
+  "subscription_id": "evidence-record",
+  "cancellation_steps": [
+    "record-1"
+  ],
+  "confirmation_evidence": "evidence-record",
+  "effective_date": "2026-10-03"
+}

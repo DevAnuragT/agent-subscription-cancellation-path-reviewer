@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: subscription-cancellation-path-reviewer
+version: 0.1.0
+description: Review subscription cancellation evidence for effective date and confirmation.
+skills:
+  - subscription-cancellation-path-reviewer-skill
+tools:
+  - review-subscription-cancellation-path-reviewer
+tags:
+  - retail-ecommerce
+  - evidence-driven
